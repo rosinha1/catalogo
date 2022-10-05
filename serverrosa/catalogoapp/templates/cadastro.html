@@ -1,0 +1,14 @@
+{% extends 'index.html' %}
+
+{% block body %}
+<form name="cad_user" method="post">
+    {% csrf_token %}
+    <div>Usuario: {{form.usuario}}</div>
+    <div>Senha: {{form.senha}}</div>
+    <div>Primerio Nome: {{form.nome}}</div>
+    <div>Ultimo Nome: {{form.ultimo_nome}}</div>
+    <input type="submit" class="btn btn-success" value="Salvar">
+</form>
+{% endblock%} 
+
+
