@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro - MaphShop</title>
+    <link rel="stylesheet" href="{% static 'css/style_cadastro.css'%}">
+    <link rel="stylesheet" href="{% static 'css/menurodape.css'%}">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/2f21a26946.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- MENU -->
+    <nav>
+        <div class="menu">
+            <ul>
+                <div class="cont-logo">
+                    <a href="/home/"><img style="float:left" src="https://i.imgur.com/7B0Cahi.png"></a>
+                </div>
+                <!-- <li style="float:left"><a class="logo" href="index.html">MapShop</a></li> -->
+                <li><a href="#" id="dir">Sobre nós</a></li>
+                <li><a href="#" id="dir">Mapa</a></li>
+                <li><a href="#" id="dir">Lojas</a></li>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- FORMULARIO CADASTRO -->
+    <div class="limiter">
+		<div class="container-cadastro100">
+			<div class="wrap-cadastro100">
+				<form class="cadastro100-form validate-form">
+					<span class="cadastro100-form-title p-b-26">
+						Cadastro
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+						<input class="input100" type="text" name="cadastro_user">
+						<span class="focus-input100" data-placeholder="Usuário"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Enter password">
+						<span class="btn-show-pass">
+							<i class="zmdi zmdi-eye"></i>
+						</span>
+						<input class="input100" type="password" name="cadastro_pass">
+						<span class="focus-input100" data-placeholder="Senha"></span>
+					</div>
+
+					<div class="container-cadastro100-form-btn">
+						<div class="wrap-cadastro100-form-btn">
+							<div class="cadastro100-form-bgbtn"></div>
+							<button class="cadastro100-form-btn">
+								Cadastrar
+							</button>
+						</div>
+					</div>
+
+					<div class="alternar">
+						<span class="txt1">
+							Já tem uma conta?
+						</span>
+
+						<a class="txt2" href="/login/">
+							Entre
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+    <!-- RODAPE -->
+    <div class="container-linha"><div class="linha"></div></div>
+    
+    <div class="container-rodape">
+        <div class="rodape">
+                <div style="float:left">
+                    <a>Fale conosco: <br>mapshop@hotmail.com</a>
+                </div>
+                <div style="float:right">
+                    <a href="/cadastro/" id="cad-sua-loja">Cadastre sua loja</a>
+                </div>
+        </div>
+    </div>
+
+</body>
+</html>
