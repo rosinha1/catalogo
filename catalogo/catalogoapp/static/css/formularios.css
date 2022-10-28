@@ -15,6 +15,22 @@ body {
     background-repeat: no-repeat;
     min-height: 100vh;
     min-width: 100vw;
+}
+
+#setinha {
+    position: absolute;
+    padding-left: 1.2%;
+    padding-top: 1%;
+    color: white;
+    transition: all 0.4s;
+}
+#setinha:hover {
+    transform: scale(1.2);
+}
+
+.bodyform {
+    min-height: 100vh;
+    min-width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +39,7 @@ body {
 main.container {
     background: white;
     min-width: 400px;
-    min-height: 30vh;
+    /* min-height: 30vh; */
     padding: 2.5rem;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
@@ -35,16 +51,16 @@ main h2 {
     position: relative;
 }
 
-main h2::before { /* linha abaixo do titulo */
+/* main h2::before {
     content: '';
     position: absolute;
     height: 3px;
-    width: 25px;
+    width: 117px;
     bottom: 3px;
     left: 0;
     border-radius: 8px;
     background: linear-gradient(to top, #642b73, #c6426e);
-}
+} */
 
 form {
     display: flex;

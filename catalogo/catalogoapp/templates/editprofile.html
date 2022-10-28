@@ -18,7 +18,7 @@
             content: '';
             position: absolute;
             height: 3px;
-            width: 117px;
+            width: 139px;
             bottom: 3px;
             left: 0;
             border-radius: 8px;
@@ -33,49 +33,40 @@
     <div class="bodyform">
         <main class="container">
             
-            <h2>Cadastro</h2>
-            <form action="/docad/" method="post">
+            <h2>Editar Perfil</h2>
+            <form action="/doupdate/" method="post">
                 {% csrf_token %}
 
                 <div class="input-field">
-                    {{form.usuario}}
-                    <!-- <input type="text" name="username" id="username" placeholder="Usuário"> -->
+                    <span>Usuário</span>
+                    {{perfil.usuario}}
                     <div class="underline"></div>
                 </div>
 
                 <div class="input-field">
-                    {{form.senha}}
-                    <!-- <input type="password" name="password" id="password" placeholder="Senha"> -->
+                    <span>Email</span>
+                    {{perfil.email}}
                     <div class="underline"></div>
                 </div>
 
                 <div class="input-field">
-                    {{form.email}}
+                    <span>Nome da Loja</span>
+                    {{perfil.nome_loja}}
                     <div class="underline"></div>
                 </div>
 
                 <div class="input-field">
-                    {{form.nome_loja}}
+                    <span>CNPJ</span>
+                    {{perfil.cnpj}}
                     <div class="underline"></div>
                 </div>
 
-                <div class="input-field">
-                    {{form.cnpj}}
-                    <div class="underline"></div>
-                </div>
-
-                <input type="submit" value="CADASTRAR">
+                <input type="submit" value="SALVAR">
             </form>
-
-            <div class="alternar">
-                <span>Já possui cadastro? 
-                    <a href="/login/">Entre</a>
-                </span>
-            </div>
 
         </main>
     </div>
-
+    
     <script src="{% static 'js/main.js' %}"></script>
 
 </body>

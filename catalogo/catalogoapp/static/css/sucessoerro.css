@@ -11,7 +11,7 @@
 }
 
 body {
-    background: linear-gradient(to top, #4776e6, #8e54e9);
+    background: linear-gradient(to top, #642b73, #c6426e);
     background-repeat: no-repeat;
     min-height: 100vh;
     min-width: 100vw;
@@ -37,3 +37,19 @@ body {
     margin-top: 2rem;
     max-height: 6vh;
 }
+
+
+/* loading */
+/* .loading {
+    border: 16px solid lightgrey;
+    width: 120px;
+    height: 120px;
+    border-top: 16px solid green;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate (0deg); }
+    100% { transform: rotate (360deg)}
+} */
